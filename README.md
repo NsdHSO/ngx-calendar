@@ -1,24 +1,22 @@
 # NgxCalendar
+This library was generated with Angular CLI version 14.0.0.
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+# Code scaffolding
 
-## Code scaffolding
+Run ng generate component component-name --project ngx-calendar to generate a new component.
 
-Run `ng generate component component-name --project ngx-calendar` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-calendar`.
-> Note: Don't forget to add `--project ngx-calendar` or else it will be added to the default project in your `angular.json` file. 
+You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-calendar`.
 
-## Build
+Note: Don't forget to add --project ngx-calendar or else it will be added to the default project in your angular.json file.
 
-Run `ng build ngx-calendar` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Build
+Run `ng build ngx-calendar` to build the project. The build artifacts will be stored in the dist/ directory.
 
-## Publishing
+# Publishing
+After building your library with `ng build ngx-calendar`, go to the dist folder `cd dist/ngx-calendar` and `run npm publish`.
 
-After building your library with `ng build ngx-calendar`, go to the dist folder `cd dist/ngx-calendar` and run `npm publish`.
+# Running unit tests
+Run `ng test ngx-calendar` to execute the unit tests via Karma.
 
-## Running unit tests
-
-Run `ng test ngx-calendar` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Further help
+To get more help on the Angular CLI use ng help or go check out the Angular CLI Overview and Command Reference page.
