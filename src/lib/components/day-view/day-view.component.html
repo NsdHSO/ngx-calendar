@@ -1,7 +1,7 @@
 <div>
   <div *ngFor="let hour of [].constructor(1440); let index=index" (click)="selectSegment($event, index)">
-    <ng-container *ngIf="index %60===0; else placeholder" >
-      {{index / 60}}
+    <ng-container *ngIf="index %60===0; else placeholder" class="mat-line">
+      {{(index / 60) | timePeriod}}
     </ng-container>
     <ng-template #placeholder>
       <div class="placeholder_empty">
