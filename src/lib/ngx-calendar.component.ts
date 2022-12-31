@@ -3,9 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'lib-ngx-calendar',
   template: `
-    <p>
-      ngx-calendar works!
-    </p>
+    <lib-day-view></lib-day-view>
   `,
   styles: [
   ]

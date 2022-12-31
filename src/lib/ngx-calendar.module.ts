@@ -1,4 +1,5 @@
 import {NgModule} from '@angular/core';
+import {DayViewComponent} from './components';
 import {NgxCalendarComponent} from './ngx-calendar.component';
 import {NgxCalendarRoutingModule} from './ngx-routing-calendar.module';
 
@@ -7,7 +8,8 @@ import {NgxCalendarRoutingModule} from './ngx-routing-calendar.module';
     NgxCalendarComponent
   ],
   imports: [
-    NgxCalendarRoutingModule
+    NgxCalendarRoutingModule,
+    DayViewComponent
   ],
   exports: [
     NgxCalendarComponent

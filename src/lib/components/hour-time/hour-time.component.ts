@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './hour-time.component.html',
-  styleUrls: ['./hour-time.component.css']
+  styleUrls: ['./hour-time.component.scss']
 })
 export class HourTimeComponent implements OnInit {
 

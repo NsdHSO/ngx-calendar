@@ -1,0 +1,12 @@
+<div>
+  <div *ngFor="let hour of [].constructor(1440); let index=index" (click)="selectSegment($event, index)">
+    <ng-container *ngIf="index %60===0; else placeholder" >
+      {{index / 60}}
+    </ng-container>
+    <ng-template #placeholder>
+      <div class="placeholder_empty">
+
+      </div>
+    </ng-template>
+  </div>
+</div>
