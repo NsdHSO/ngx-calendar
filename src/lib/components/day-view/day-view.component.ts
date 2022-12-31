@@ -1,13 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {TimePeriodPipe} from '../utils/directive/time-perriod.pipe';
+import {
+  LineHorizontalDirective,
+  TimePeriodPipe
+} from '../utils';
 
 @Component({
   selector: 'lib-day-view',
   standalone: true,
   imports: [
     CommonModule,
-    TimePeriodPipe
+    TimePeriodPipe,
+    LineHorizontalDirective
   ],
   templateUrl: './day-view.component.html',
   styleUrls: ['./day-view.component.scss']

@@ -1,3 +1,21 @@
-.placeholder_empty{
-  height: 0.05rem;
+.day-view {
+  &__period {
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &__time {
+      border-right: 1px solid #dadce0;
+      width: 3rem;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__empty{
+    height: 0.05rem;
+    margin-left: 2.813rem;
+    border-left: 1px solid #dadce0;
+  }
 }

@@ -1,11 +1,15 @@
 <div>
-  <div *ngFor="let hour of [].constructor(1440); let index=index" (click)="selectSegment($event, index)">
-    <ng-container *ngIf="index %60===0; else placeholder" class="mat-line">
-      {{(index / 60) | timePeriod}}
-    </ng-container>
+  <div *ngFor="let hour of [].constructor(1440); let index=index"
+       class="day-view"
+       (click)="selectSegment($event, index)">
+    <div *ngIf="index %60===0; else placeholder" class="day-view__period">
+      <div class="day-view__period__time">
+        {{(index / 60) | timePeriod}}
+      </div>
+      <div lineHorizontal></div>
+    </div>
     <ng-template #placeholder>
-      <div class="placeholder_empty">
-
+      <div class="day-view__empty">
       </div>
     </ng-template>
   </div>
