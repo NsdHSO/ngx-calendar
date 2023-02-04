@@ -1,0 +1,62 @@
+.container-hour
+{
+  &__view
+  {
+    height:      3.75rem;
+    width:       97%;
+    background:  rgba(200, 227, 221, 0.2);
+    margin-left: 2.3rem;
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 375px)
+    {
+      width:       90%;
+      height:      6rem;
+    };
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 420px)
+    {
+      width:       91%;
+      height:      8rem;
+    };
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px)
+    {
+    };
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px)
+    {
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px)
+    {
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px)
+    {
+    }
+  }
+
+  &__divider
+  {
+    width:       98%;
+    box-shadow:  rgb(0 0 0 / 25%) 0px 0 0 0.5px, rgb(0 0 0 / 25%) 0px 0 0, rgb(255 255 255 / 10%) 0px 0px 0px 0px;
+    margin-left: 2rem;
+  }
+
+  &__label
+  {
+    position: relative;
+    height:   0px;
+
+    span
+    {
+      position:   absolute;
+      margin-top: -0.5rem;
+      text-align: right;
+      width:      1rem;
+    }
+  }
+}

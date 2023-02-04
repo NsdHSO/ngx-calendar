@@ -1,18 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
 
 @Component({
   selector: 'lib-ngx-calendar',
   template: `
-    <lib-day-view></lib-day-view>
+    <ngx-day-view></ngx-day-view>
   `,
-  styles: [
-  ]
+  styles: []
 })
 export class NgxCalendarComponent implements OnInit {
-
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() : void {
   }
-
 }

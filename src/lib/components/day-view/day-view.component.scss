@@ -1,27 +1,47 @@
-.day-view {
-  &__period {
+.container
+{
+  position: relative;
+  &:before{
+    position: absolute;
+    content: '';
+    box-shadow: rgb(0 0 0 / 25%) 0px 0 0 0.5px, rgb(0 0 0 / 25%) 0px 0 0, rgb(255 255 255 / 10%) 0px 0px 0px 0px;
 
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    left: 2.8rem;
+    height: calc( 100% + 1rem);
+    top: -1rem;
+  }
 
-    &__time {
-      border-right: 1px solid #dadce0;
-      width: 3rem;
-      display: flex;
-      justify-content: flex-end;
+  &__day-view
+  {
+    &__period
+    {
+
+      display:     flex;
+      align-items: center;
+      gap:         0.5rem;
+
+      &__time
+      {
+        border-right:    1px solid #dadce0;
+        width:           3rem;
+        display:         flex;
+        justify-content: flex-end;
+      }
     }
   }
 
-  &__empty{
-    height: 0.05rem;
+  &__empty
+  {
+    height:      0.05rem;
     margin-left: 2.73rem;
     border-left: 1px solid #dadce0;
   }
 }
-.meeting{
-  background: red;
+
+.meeting
+{
+  background:  red;
   margin-left: 2.73rem;
   border-left: 1px solid #dadce0;
-  height: 0.2rem;
+  height:      0.05rem;
 }

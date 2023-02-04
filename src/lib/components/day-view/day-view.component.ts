@@ -3,6 +3,7 @@ import {
   Component,
   OnInit
 } from '@angular/core';
+import {HourTimeComponent} from '../hour-time/hour-time.component';
 import {
   LineHorizontalDirective,
   NoModifiedEnum,
@@ -11,12 +12,13 @@ import {
 } from '../utils';
 
 @Component({
-  selector: 'lib-day-view',
+  selector: 'ngx-day-view',
   standalone: true,
-  imports: [
+  imports:[
     CommonModule,
     TimePeriodPipe,
-    LineHorizontalDirective
+    LineHorizontalDirective,
+    HourTimeComponent,
   ],
   templateUrl: './day-view.component.html',
   styleUrls: ['./day-view.component.scss']
@@ -55,44 +57,14 @@ export class DayViewComponent implements OnInit {
   constructor() { }
 
   currentInterval(index : number) {
-    const newDate = new Date();
-    const minutes = this.selectSegment(
-      index)
-      .toString()
-      .split(':')[1];
-    const hour = +(this.selectSegment(
-      index)
-      .toString()
-      .split(':')[0])-1;
-    newDate.setHours(+hour);
-    newDate.setMinutes(+minutes);
-    let d = false
-    let a = this.meetings.filter(
-      t =>{
-         if(+hour === 3 && +minutes >= 21 ){
-           debugger
-         }
-        this.d = newDate > t.startMeeting && newDate < t.endMeeting;
-         return this.d
-      }
-    )
-    console.log(a.length >= 1)
-    return this.d
+
   }
 
   ngOnInit() : void {
-    console.log(this.meetings)
-
+    //
   }
 
-  public selectSegment(
-    index : number) : string {
-    const hours = index / 60;
-    const minute = Math.abs(
-      hours) - Math.floor(hours);
-    return Math.abs(hours)
-      .toFixed() + ':' + Math.abs(
-      minute * 60)
-      .toFixed();
+  public selectSegment(index: number){
+    console.log(index)
   }
 }

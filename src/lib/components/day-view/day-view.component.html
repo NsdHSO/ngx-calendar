@@ -1,23 +1,7 @@
-<div>
-  <div *ngFor="let hour of [].constructor(periodHour.ALL_MINUTES); let index=index"
+<div class="container">
+  <div *ngFor="let hour of [].constructor(periodHour.ALL_HOURS); let index=index"
        class="day-view"
        (click)="selectSegment(index)">
-    <div *ngIf="index %periodHour.HOUR===zeroConst.ZERO; else placeholder"
-         class="day-view__period">
-      <div class="day-view__period__time">
-        {{(index / periodHour.HOUR) | timePeriod}}
-      </div>
-      <div lineHorizontal></div>
-    </div>
-    <ng-template #placeholder>
-      <div [ngClass]="{'meeting': d}"
-           *ngIf="currentInterval(index);else placeholderEmpty">
-      </div>
-      <ng-template
-        #placeholderEmpty>
-        <div class="day-view__empty">
-        </div>
-      </ng-template>
-    </ng-template>
+    <ngx-hour-time [hour]="index.toString()"></ngx-hour-time>
   </div>
 </div>
